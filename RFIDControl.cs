@@ -41,78 +41,18 @@ namespace SmartShop
 
         public static void Main(string[] args)
         {
-
-            /* connectDB.Open();
-            _ = KeepUpdating();
-            Console.ReadLine();
-            foreach (KeyValuePair<string, bool> entry in dict)
-            {
-                Console.WriteLine("TID= " + entry.Key + "   is_sold= " + entry.Value);
-            }*/
-
-
             if (RFIDReader.CreateTcpConn(socketURL, self))    // Send ICMP(ping) package
             {
                 Console.WriteLine("Connect RFID Reader Succeed!");
                 connectDB.Open();
                 Console.WriteLine("Connect Database Succeed!");
 
-                string command;
-                while (true)
-                {
-                    command = Console.ReadLine();
-                    if ("exit".Equals(command))
-                    {
-                        connectDB.Close();
-                        RFIDReader.CloseAllConnect();
-                        Environment.Exit(0);
-                    }
-                    else if ("write".Equals(command))
-                    {
-                        string srt = RFIDReader._Tag6C.WriteEPC(socketURL, eAntennaNo._1 | eAntennaNo._2, "1111", "0003"); // 0003?
-                        Console.WriteLine("Result :" + srt);
-                    }
-                    else if ("insert".Equals(command))
-                    {
-                        string value = "";
-                        foreach (string tid in cache) {
-                            value += "(1,'" + tid + "',0),";
-                        }
-                        value = value.TrimEnd(',');
-                        value += ";";
-
-                        string checkSQL = "INSERT INTO shop_product_inventories (shop_product_id,rfid_code,is_sold) VALUES " + value;
-                        MySqlCommand runSQL = new MySqlCommand(checkSQL, connectDB);
-                        runSQL.ExecuteNonQuery();
-                    }
-                    else if ("scan".Equals(command))
-                    {
-                        _ = KeepUpdating();
-                        if (RFIDReader._Tag6C.GetEPC_TID(socketURL, eAntennaNo._1 | eAntennaNo._2, eReadType.Inventory) == 0)   // Goto OutPutTags function
-                            Console.WriteLine("Scanning Tag...");
-                        else
-                            Console.WriteLine("Open Stream Fail! Ensure only one device is connecting to the RFID reader.");
-
-                    }
-                    else if ("kill".Equals(command))
-                    {
-                        int rt = RFIDReader._Tag6C.Destroy_MatchEPC(socketURL, eAntennaNo._1 | eAntennaNo._2, "76578990", "4321", 0);
-                        Console.WriteLine("Result :" + rt);
-                    }
-                    else if ("stop".Equals(command))
-                    {
-                        RFIDReader._RFIDConfig.Stop(socketURL);
-                    }
-                    else if ("on".Equals(command))
-                    {
-                        ConfigGPO(eGPOState.High);
-                    }
-                    else if ("off".Equals(command))
-                    {
-                        ConfigGPO(eGPOState.Low);
-                    }
-                }
-
+                _ = KeepUpdating();
+                if (RFIDReader._Tag6C.GetEPC_TID(socketURL, eAntennaNo._1 | eAntennaNo._2, eReadType.Inventory) == 0)   // Goto OutPutTags function
+                    Console.WriteLine("Scanning Tag...");
+                else
+                    Console.WriteLine("Open Stream Fail! Ensure only one device is connecting to the RFID reader. (Not Accurate)");
+                Console.ReadLine();
             }
             else
             {
@@ -204,14 +144,13 @@ namespace SmartShop
                 while (dbResponse.Read())
                 {
                     bool signal = false;
-                    Console.WriteLine(dbResponse.GetInt16("is_sold"));
                     if (dbResponse.GetInt16("is_sold") == 2)
                         signal = true;
                     newDict.Add(dbResponse.GetString("rfid_code"), signal);
                 }
                 dbResponse.Close();
                 dict = newDict;
-                Console.WriteLine("Updated");
+                Console.WriteLine("Dictionary Updated");
             }
             
         }

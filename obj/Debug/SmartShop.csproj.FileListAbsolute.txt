@@ -27,3 +27,31 @@ C:\Users\hs0atszcyauk\Documents\Visual Studio 2019\ProjectArea\SmartShop\bin\Deb
 C:\Users\hs0atszcyauk\Documents\Visual Studio 2019\ProjectArea\SmartShop\bin\Debug\System.Buffers.xml
 C:\Users\hs0atszcyauk\Documents\Visual Studio 2019\ProjectArea\SmartShop\bin\Debug\System.Memory.xml
 C:\Users\hs0atszcyauk\Documents\Visual Studio 2019\ProjectArea\SmartShop\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\hs0atszcyauk\Desktop\SmartShopRFIDEXE\bin\Debug\SmartShop.exe.config
+C:\Users\hs0atszcyauk\Desktop\SmartShopRFIDEXE\bin\Debug\SmartShop.exe
+C:\Users\hs0atszcyauk\Desktop\SmartShopRFIDEXE\bin\Debug\SmartShop.pdb
+C:\Users\hs0atszcyauk\Desktop\SmartShopRFIDEXE\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\hs0atszcyauk\Desktop\SmartShopRFIDEXE\bin\Debug\Google.Protobuf.dll
+C:\Users\hs0atszcyauk\Desktop\SmartShopRFIDEXE\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\hs0atszcyauk\Desktop\SmartShopRFIDEXE\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\hs0atszcyauk\Desktop\SmartShopRFIDEXE\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\hs0atszcyauk\Desktop\SmartShopRFIDEXE\bin\Debug\MySql.Data.dll
+C:\Users\hs0atszcyauk\Desktop\SmartShopRFIDEXE\bin\Debug\Renci.SshNet.dll
+C:\Users\hs0atszcyauk\Desktop\SmartShopRFIDEXE\bin\Debug\System.Buffers.dll
+C:\Users\hs0atszcyauk\Desktop\SmartShopRFIDEXE\bin\Debug\System.Memory.dll
+C:\Users\hs0atszcyauk\Desktop\SmartShopRFIDEXE\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\hs0atszcyauk\Desktop\SmartShopRFIDEXE\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\hs0atszcyauk\Desktop\SmartShopRFIDEXE\bin\Debug\Zstandard.Net.dll
+C:\Users\hs0atszcyauk\Desktop\SmartShopRFIDEXE\bin\Debug\Google.Protobuf.xml
+C:\Users\hs0atszcyauk\Desktop\SmartShopRFIDEXE\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\hs0atszcyauk\Desktop\SmartShopRFIDEXE\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\hs0atszcyauk\Desktop\SmartShopRFIDEXE\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\hs0atszcyauk\Desktop\SmartShopRFIDEXE\bin\Debug\MySql.Data.xml
+C:\Users\hs0atszcyauk\Desktop\SmartShopRFIDEXE\bin\Debug\Renci.SshNet.xml
+C:\Users\hs0atszcyauk\Desktop\SmartShopRFIDEXE\bin\Debug\System.Buffers.xml
+C:\Users\hs0atszcyauk\Desktop\SmartShopRFIDEXE\bin\Debug\System.Memory.xml
+C:\Users\hs0atszcyauk\Desktop\SmartShopRFIDEXE\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\hs0atszcyauk\Desktop\SmartShopRFIDEXE\obj\Debug\SmartShop.csprojAssemblyReference.cache
+C:\Users\hs0atszcyauk\Desktop\SmartShopRFIDEXE\obj\Debug\SmartShop.csproj.CopyComplete
+C:\Users\hs0atszcyauk\Desktop\SmartShopRFIDEXE\obj\Debug\SmartShop.exe
+C:\Users\hs0atszcyauk\Desktop\SmartShopRFIDEXE\obj\Debug\SmartShop.pdb
